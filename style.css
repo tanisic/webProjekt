@@ -2,6 +2,9 @@
     background-color: #283747;
 
 }
+#workHour div h3{
+    color: antiquewhite;
+}
 .col-md-5 h2{
     color: wheat;
     font-size: 1.4rem;
@@ -16,23 +19,34 @@
 }
 #navbar{
     background-color: #283747;
+    display: ;
 }
 
 #navbar li a{
     color: red;
-    font-family: monospace;
     font-size: x-large;
 }
 
-.body{
+.container-fluid{
     background-color: #A9A9A9;    
 }
 #navbar .col-md-4{
     float: right;
 }
 .login-reg{
-    display: inline;
+    margin: auto;
+    width: 50%; 
 }
-.login-reg .nav-item .nav-link{
-    color: black;
+.grey-content{
+    display: block;
+    font-size: 1.9rem;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #283747;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.fixed-top{
+    
 }
