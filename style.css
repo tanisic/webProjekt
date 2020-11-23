@@ -30,8 +30,10 @@
 }
 
 .top-container {
-    background-color: #A9A9A9;
-    margin-top: 68px;
+    background: rgb(99,99,99);
+    background: linear-gradient(90deg, rgba(99,99,99,1) 0%, rgba(212,212,212,1) 52%, rgba(99,99,99,1) 100%);
+    margin-top: 30px;
+    
 }
 
 #navbar .col-md-4 {
@@ -101,6 +103,7 @@ img{
 img:hover{
     transform: scale(1.05);
 }
+
 .container-fluid-gallerija{
     margin-top: auto;
     margin-bottom: auto;
@@ -111,9 +114,30 @@ img:hover{
     color: #283747;
     font-weight: bold;
 }
+.container-fluid-gallerija{
+    max-width: initial;
+}
 .navbar-expand-lg{
     background-color: #283747;
 }
-.navbar-toggler-icon{
-    background-color: #A9A9A9;
+.nav-item{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.nav-item:hover{
+    color: red;
+    font-size: 1.4rem;
+}
+.navbar-toggler{
+    z-index: 10;
+    background-color: #466FFF;
+}
+.hamburger{
+    height: 18px;
+    width: 18px;
+}
+.div-galerija{
+    background: rgb(99,99,99);
+    background: linear-gradient(90deg, rgba(99,99,99,1) 0%, rgba(212,212,212,1) 52%, rgba(99,99,99,1) 100%);
 }
