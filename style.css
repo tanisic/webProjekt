@@ -123,6 +123,7 @@ img:hover{
 
 .navbar-expand-lg{
     background-color:#808080;
+    padding-bottom: -50px;
 }
 .nav-item{
     font-family: "Open Sans", "Roboto", sans-serif;
@@ -133,6 +134,7 @@ img:hover{
 .nav-item:hover{
     color: red;
     font-size: 1.4rem;
+    text-decoration: underline;
 }
 .navbar-toggler{
     z-index: 10;
