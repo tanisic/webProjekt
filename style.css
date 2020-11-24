@@ -1,3 +1,6 @@
+*{
+    font-family: "Roboto",sans-serif;
+}
 #workHour {
     background-color: #283747;
 
@@ -21,7 +24,7 @@
 }
 
 #navbar {
-    background-color: #283747;
+    background-color:#696969;
 }
 
 #navbar li a {
@@ -30,9 +33,11 @@
 }
 
 .top-container {
-    background: rgb(99,99,99);
-    background: linear-gradient(90deg, rgba(99,99,99,1) 0%, rgba(212,212,212,1) 52%, rgba(99,99,99,1) 100%);
+    background: rgb(24,24,28);
+background: linear-gradient(90deg, rgba(24,24,28,1) 0%, rgba(189,44,44,1) 50%, rgba(24,24,28,1) 100%);
     margin-top: 30px;
+    padding-bottom: 50px;
+    margin-bottom: -20px;
     
 }
 
@@ -51,7 +56,7 @@
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    color: #283747;
+    color:#DCDCDC;
     font-weight: bold;
     font-size: 3rem;
 }
@@ -107,21 +112,21 @@ img:hover{
 .container-fluid-gallerija{
     margin-top: auto;
     margin-bottom: auto;
-    text-align: center;
+    text-align: center; 
 }
 .container-fluid-gallerija h1{
-    font-size: 5rem;
-    color: #283747;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    color: #DCDCDC;
     font-weight: bold;
 }
-.container-fluid-gallerija{
-    max-width: initial;
-}
+
 .navbar-expand-lg{
-    background-color: #283747;
+    background-color:#808080;
 }
 .nav-item{
-    color: white;
+    font-family: "Open Sans", "Roboto", sans-serif;
+    color: black;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -131,13 +136,26 @@ img:hover{
 }
 .navbar-toggler{
     z-index: 10;
-    background-color: #466FFF;
 }
 .hamburger{
     height: 18px;
     width: 18px;
+    color: white;
 }
 .div-galerija{
-    background: rgb(99,99,99);
-    background: linear-gradient(90deg, rgba(99,99,99,1) 0%, rgba(212,212,212,1) 52%, rgba(99,99,99,1) 100%);
+    background: rgb(24,24,28);
+    background: linear-gradient(90deg, rgba(24,24,28,1) 0%, rgba(189,44,44,1) 50%, rgba(24,24,28,1) 100%);
+}
+
+.about-text{
+    margin: 0;
+    font-size: 1.2rem;
+    color: #DCDCDC;
+}
+.container-fluid h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    color: #DCDCDC;
+    font-weight: bold;
 }
