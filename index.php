@@ -109,7 +109,7 @@
         Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam egestas libero id
         erat vestibulum posuere.</p>
     </div>
-    <script src="scripts.js"></script>
+    <script src="index_script.js"></script>
 </body>
 
 </html>

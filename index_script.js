@@ -5,7 +5,7 @@ $(document).ready(function () {
         $("body,html").animate({
                 scrollTop: $("#galerija").offset().top
             },
-            1000 //speed
+            0 //speed
         );
     });
 });
@@ -15,7 +15,7 @@ $(document).ready(function () {
         $("body,html").animate({
                 scrollTop: $("#o-nama").offset().top
             },
-            1000 //speed
+            0 //speed
         );
     });
 });
@@ -24,9 +24,10 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".pocetna-button").click(function () {
         $("body,html").animate({
-                scrollTop: $("body").offset().top
+                scrollTop: $("header").offset().top
             },
-            1000 //speed
+            0 //speed
         );
     });
 });
+
