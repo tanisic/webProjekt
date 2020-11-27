@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+session_start();
+?>
 <html lang="en">
 
 <head>
@@ -45,8 +47,17 @@
           <a class="nav-item nav-link active pocetna-button" href="#">Početna <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link galerija-button" href="#galerija">Foto galerija</a>
           <a class="nav-item nav-link onama-button" href="#o-nama">O nama</a>
-          <a class="nav-item nav-link" href="#">Login</a>
-          <a class="nav-item nav-link" href="register.html">Registracija</a>
+
+
+          <?php
+            if (isset($_SESSION["email"])){
+              echo '<a class="nav-item nav-link" href="logout.php">Logout</a>';
+            }
+            else{
+              echo '<a class="nav-item nav-link" href="login.php">Login</a>';
+              echo '<a class="nav-item nav-link" href="register.html">Registracija</a>';
+            }
+          ?>
         </div>
       </div>
     </nav>

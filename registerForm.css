@@ -4,7 +4,7 @@ body{
 }
 h3{
     font-weight: bold;
-    
+
 }
 .card-header{
     background-color:#696969;
@@ -26,5 +26,4 @@ h3{
     background-color: red !important;
     color: black;
     font-size: 30px;
-    
 }

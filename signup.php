@@ -1,15 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost','root','','Teretana');
-try {
-  
-  if (!$conn) {
-      throw new Exception("Database Connection Error");
-  }
-}
-catch(Exception $e) {
-  echo "caught exception", $e->getMessage(), "\n";
-  die();
-}
+include "connect.php";
 $firstName = trim($_POST['first_name']);
 $lastName = trim($_POST['last_name']);
 $emailId = trim($_POST['email']);
