@@ -39,7 +39,7 @@ header("Location:index.php");
   <div class="card col-4">
     <div class="">
       <article class="card-body">
-        <a href="" class="float-right btn btn-outline-primary">Sign up</a>
+        <a href="register.html" class="float-right btn btn-outline-primary">Sign up</a>
         <h4 class="card-title mb-4 mt-1">Sign in</h4>
         <form id="form-login" action="" method="post" onsubmit="return validate();">
           <div class="form-group">

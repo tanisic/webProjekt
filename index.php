@@ -55,7 +55,7 @@ session_start();
             }
             else{
               echo '<a class="nav-item nav-link" href="login.php">Login</a>';
-              echo '<a class="nav-item nav-link" href="register.html">Registracija</a>';
+              echo '<a class="nav-item nav-link" href="register.php">Registracija</a>';
             }
           ?>
         </div>
