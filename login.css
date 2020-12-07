@@ -8,3 +8,12 @@ body{
 .card{
   background-color: #696969;
 }
+.btn:hover{
+  color: black;
+  background-color: red;
+}
+.login-button{
+  background-color: red !important;
+  color: black;
+  font-size: 30px;
+}

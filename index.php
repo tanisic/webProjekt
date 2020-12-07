@@ -12,6 +12,7 @@ session_start();
   <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-theme.min.css" />
   <!-- Latest compiled and minified JavaScript -->
   <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <link rel="icon" href="images/dumbbell.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -72,6 +73,23 @@ session_start();
       </div>
     </div>
   </div>
+  <div class="container-fluid div-galerija" id="o-nama">
+      <h1>O nama</h1>
+      <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna erat, eleifend at varius ac, lacinia
+        eget ligula. Vestibulum suscipit dapibus convallis. In hac habitasse platea dictumst. Nulla consequat purus quis
+        metus fermentum tincidunt. Ut efficitur tortor at ullamcorper euismod. In vitae dui dictum, posuere ligula sit
+        amet, lacinia felis. Donec quis suscipit erat. Sed nulla lorem, iaculis sed libero nec, accumsan eleifend odio.
+        Aliquam erat volutpat. Cras elit mauris, efficitur mollis auctor ac, viverra non massa. Nullam porttitor justo
+        hendrerit ullamcorper euismod. Praesent sagittis molestie rutrum. Etiam in lobortis leo. Proin auctor varius
+        libero a pulvinar. Aliquam vel pharetra lacus, a blandit tortor.
+
+        In a vestibulum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+        egestas. Cras et lorem dignissim diam faucibus posuere. Mauris a luctus nunc. Aliquam sit amet consequat lorem.
+        Nulla id velit sit amet arcu auctor ultricies ut vitae nulla. Nullam accumsan efficitur sodales. Vivamus nisi
+        neque, pretium vitae quam a, venenatis mollis quam. Donec a lorem bibendum, vestibulum ex id, accumsan tortor.
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam egestas libero id
+        erat vestibulum posuere.</p>
+    </div>
   <div class="container-fluid div-galerija">
     <div class="container-fluid-gallerija" id="galerija">
       <h1>
@@ -103,23 +121,7 @@ session_start();
       </div>
     </div>
 
-    <div class="container-fluid" id="o-nama">
-      <h1>O nama</h1>
-      <p class=about-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna erat, eleifend at varius ac, lacinia
-        eget ligula. Vestibulum suscipit dapibus convallis. In hac habitasse platea dictumst. Nulla consequat purus quis
-        metus fermentum tincidunt. Ut efficitur tortor at ullamcorper euismod. In vitae dui dictum, posuere ligula sit
-        amet, lacinia felis. Donec quis suscipit erat. Sed nulla lorem, iaculis sed libero nec, accumsan eleifend odio.
-        Aliquam erat volutpat. Cras elit mauris, efficitur mollis auctor ac, viverra non massa. Nullam porttitor justo
-        hendrerit ullamcorper euismod. Praesent sagittis molestie rutrum. Etiam in lobortis leo. Proin auctor varius
-        libero a pulvinar. Aliquam vel pharetra lacus, a blandit tortor.
-
-        In a vestibulum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-        egestas. Cras et lorem dignissim diam faucibus posuere. Mauris a luctus nunc. Aliquam sit amet consequat lorem.
-        Nulla id velit sit amet arcu auctor ultricies ut vitae nulla. Nullam accumsan efficitur sodales. Vivamus nisi
-        neque, pretium vitae quam a, venenatis mollis quam. Donec a lorem bibendum, vestibulum ex id, accumsan tortor.
-        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam egestas libero id
-        erat vestibulum posuere.</p>
-    </div>
+    
     <script src="index_script.js"></script>
 </body>
 

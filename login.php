@@ -26,6 +26,7 @@ header("Location:index.php");
 
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="images/dumbbell.png">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -39,22 +40,17 @@ header("Location:index.php");
   <div class="card col-4">
     <div class="">
       <article class="card-body">
-        <a href="register.html" class="float-right btn btn-outline-primary">Sign up</a>
-        <h4 class="card-title mb-4 mt-1">Sign in</h4>
+        <a href="register.html" class="float-right btn btn-outline-primary ">Registriraj se!</a>
+        <a href="index.php" class="float-right btn btn-outline-primary ">Početna</a>
+        <h4 class="card-title mb-4 mt-1">Logiraj se!</h4>
         <form id="form-login" action="" method="post" onsubmit="return validate();">
           <div class="form-group">
-            <label>Your email</label>
-            <input class="form-control" name="email" id="email" placeholder="Email" type="email">
+            <label>E-mail</label>
+            <input class="form-control" name="email" id="email" placeholder="Email..." type="email">
           </div> <!-- form-group// -->
           <div class="form-group">
-            <a class="float-right" href="#">Forgot?</a>
-            <label>Your password</label>
-            <input class="form-control" name="password" id="password" placeholder="Lozinka" type="password">
-          </div> <!-- form-group// -->
-          <div class="form-group">
-            <div class="checkbox">
-              <label> <input type="checkbox"> Save password </label>
-            </div> <!-- checkbox .// -->
+            <label>Lozinka</label>
+            <input class="form-control" name="password" id="password" placeholder="Lozinka..." type="password">
           </div> <!-- form-group// -->
           <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block"> Login </button>

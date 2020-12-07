@@ -14,9 +14,12 @@ h3{
 }
 .login-register a{
     color: red;
+    margin-right: 10px;
+    font-size: 1.2rem;
 }
 .login-register a:hover{
     color: black;
+    font-size: 1.4rem;
 }
 .btn:hover{
     color: black;
