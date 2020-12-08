@@ -32,6 +32,8 @@ session_start();
     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
   <link rel="stylesheet" href="style.css" />
   <title>Teretana "Baš Fit"</title>
 </head>
@@ -45,13 +47,12 @@ session_start();
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active pocetna-button" href="#">Početna <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link galerija-button" href="#galerija">Foto galerija</a>
+          <a class="nav-item nav-link active pocetna-button" href="#">Početna</a>
           <a class="nav-item nav-link onama-button" href="#o-nama">O nama</a>
-
-
+          <a class="nav-item nav-link galerija-button" href="#galerija">Foto galerija</a>
           <?php
             if (isset($_SESSION["email"])){
+              echo '<a class="nav-item nav-link" href="dashboard.php">Postavke računa</a>';
               echo '<a class="nav-item nav-link" href="logout.php">Logout</a>';
             }
             else{
@@ -90,37 +91,65 @@ session_start();
         Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam egestas libero id
         erat vestibulum posuere.</p>
     </div>
-  <div class="container-fluid div-galerija">
-    <div class="container-fluid-gallerija" id="galerija">
-      <h1>
-        Naša fotogalerija
-      </h1>
-    </div>
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8 gallery" id="gallery">
-        <div class="mb-3 pics animation all 2">
-          <img class="img-fluid" src="images/gym1.jpg" alt="Card image cap">
-        </div>
-        <div class="mb-3 pics animation all 1">
-          <img class="img-fluid" src="images/gym2.jpg" alt="Card image cap">
-        </div>
-        <div class="mb-3 pics animation all 1">
-          <img class="img-fluid" src="images/gym3.jpg" alt="Card image cap">
-        </div>
-        <div class="mb-3 pics animation all 2">
-          <img class="img-fluid" src="images/gym4.jpg" alt="Card image cap">
-        </div>
-        <div class="mb-3 pics animation all 2">
-          <img class="img-fluid" src="images/gym5.jpg" alt="Card image cap">
-        </div>
-        <div class="mb-3 pics animation all 1">
-          <img class="img-fluid" src="images/gym7.jpg" alt="Card image cap">
-        </div>
-        <div class="col-2"></div>
-      </div>
-    </div>
 
+    <div class="container-fluid" id="galerija">
+      <h1>
+        Naša foto galerija
+        <hr>
+      </h1>
+    <div class="container page-top">
+    <div class="row">
+
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="images/gym1.jpg" class="fancybox" rel="ligthbox">
+                <img  src="images/gym1.jpg" class="zoom img-fluid "  alt="">
+              
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="images/gym2.jpg"  class="fancybox" rel="ligthbox">
+                <img  src="images/gym2.jpg" class="zoom img-fluid"  alt="">
+            </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="images/gym6.jpg" class="fancybox" rel="ligthbox">
+                <img  src="images/gym6.jpg" class="zoom img-fluid "  alt="">
+            </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="images/gym4.jpg" class="fancybox" rel="ligthbox">
+                <img  src="images/gym4.jpg" class="zoom img-fluid "  alt="">
+            </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="images/gym5.jpg" class="fancybox" rel="ligthbox">
+                <img  src="images/gym5.jpg" class="zoom img-fluid "  alt="">
+            </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="images/gym7.jpg" class="fancybox" rel="ligthbox">
+                <img  src="images/gym7.jpg" class="zoom img-fluid "  alt="">
+            </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="images/gym3.jpg" class="fancybox" rel="ligthbox">
+                <img  src="images/gym3.jpg" class="zoom img-fluid "  alt="">
+            </a>
+        </div>
+    
+      </div>
+
+
+
+
+</div>
+</div>
     
     <script src="index_script.js"></script>
 </body>

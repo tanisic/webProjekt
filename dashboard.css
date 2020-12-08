@@ -1,0 +1,19 @@
+.nav-item{
+    font-family: "Open Sans", "Roboto", sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar-expand-lg{
+    background-color:#808080;
+    padding-bottom: -50px;
+}
+body{
+    background: rgb(24,24,28);
+    background: linear-gradient(90deg, rgba(24,24,28,1) 0%, rgba(189,44,44,1) 50%, rgba(24,24,28,1) 100%);
+}
+.nav-item:hover{
+    color: red;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}

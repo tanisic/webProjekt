@@ -1,37 +1,49 @@
 $(document).ready(function () {
-    $("#btn").click(function () {
+    $(".registration").validate({
+        rules: {
+            first_name: {
+                required: true,
+                minlength: 3
+            },
+            last_name: {
+                required: true,
+                minlength: 3
+            },
+            telephone: {
+                required: true,
+                number: true,
+                min: 9
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            password: {
+                required: true,
+                minlength: 8
 
-        // using serialize function of jQuery to get all values of form
-        var serializedData = $("#reg-form").serialize();
-
-        // Variable to hold request
-        var request;
-        // Fire off the request to process_registration_form.php
-        request = $.ajax({
-            url: "signup.php",
-            type: "post",
-            data: serializedData
-        });
-
-        // Callback handler that will be called on success
-        request.done(function (jqXHR, textStatus, response) {
-            // you will get response from your php page (what you echo or print)
-            // show successfully for submit message
-            //$("#result").html(response);
-        });
-
-        // Callback handler that will be called on failure
-        request.fail(function (jqXHR, textStatus, errorThrown) {
-            // Log the error to the console
-            // show error
-            
-            console.error(
-                "The following error occurred: " +
-                textStatus, errorThrown
-            );
-        });
-
-        return false;
-
+            },
+            confirm: {
+                equalTo: "#password",
+                minlength:8
+            }
+        },
+        messages: {
+            name: {
+                minlength: "Name should be at least 3 characters"
+            },
+            age: {
+                required: "Please enter your age",
+                number: "Please enter your age as a numerical value",
+                min: "You must be at least 18 years old"
+            },
+            email: {
+                email: "The email should be in the format: abc@domain.tld"
+            },
+            weight: {
+                required: "People with age over 50 have to enter their weight",
+                number: "Please enter your weight as a numerical value"
+            }
+        }
     });
 });
