@@ -12,7 +12,7 @@ $(document).ready(function () {
             telephone: {
                 required: true,
                 number: true,
-                min: 9
+                minlength: 9
             },
             email: {
                 required: true,
@@ -30,25 +30,30 @@ $(document).ready(function () {
         },
         messages: {
             first_name: {
-                minlength: "Name should be at least 3 characters"
+                required: "Unesite ime",
+                minlength: "Ime mora sadržavati barem 3 slova."
             },
             last_name: {
-                minlength: "Name should be at least 3 characters"
+                required: "Unesite prezime",
+                minlength: "Prezime mora sadržavati barem 3 slova."
             },
             telephone: {
-                required: "Please enter your age",
-                number: "Please enter your age as a numerical value",
-                min: "You must be at least 18 years old"
+                required: "Unesite valjani broj telefona",
+                number: "Unesite numeričku vrijednost",
+                minlength: "Broj mora sadržavati barem 9 znamenaka"
             },
             email: {
-                email: "The email should be in the format: abc@domain.tld"
+                required: "Unesite email adresu",
+                email: "Email mora biti formata: primjer@primjer.hr"
             },
             password: {
-                required: "People with age over 50 have to enter their weight",
-                number: "Please enter your weight as a numerical value"
+                required: "Ovo polje je obavezno za unos",
+                minlength: "Lozinka mora sadržavati barem 8 znakova"
             },
             confirm:{
-                equalTo: "Password does not match"
+                required: "Ponovno unesite lozinku",
+                equalTo: "Lozinke se ne podudaraju",
+                minlength: "Lozinka mora sadržavati barem 8 znakova"
             },
             submitHandler: function(form){
                 form.submit();

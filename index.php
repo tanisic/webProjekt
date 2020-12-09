@@ -47,6 +47,11 @@ session_start();
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+          <?php
+            if(isset($_SESSION["email"])){
+              echo '<a class="nav-link user-logged nav-item" href="dashboard.php">Dobrodošao, '.$_SESSION["first_name"].'</a>';
+            }
+          ?>
           <a class="nav-item nav-link active pocetna-button" href="#">Početna</a>
           <a class="nav-item nav-link onama-button" href="#o-nama">O nama</a>
           <a class="nav-item nav-link galerija-button" href="#galerija">Foto galerija</a>
