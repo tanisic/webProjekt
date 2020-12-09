@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".registration").validate({
+    $("form[name='registration'").validate({
         rules: {
             first_name: {
                 required: true,
@@ -29,10 +29,13 @@ $(document).ready(function () {
             }
         },
         messages: {
-            name: {
+            first_name: {
                 minlength: "Name should be at least 3 characters"
             },
-            age: {
+            last_name: {
+                minlength: "Name should be at least 3 characters"
+            },
+            telephone: {
                 required: "Please enter your age",
                 number: "Please enter your age as a numerical value",
                 min: "You must be at least 18 years old"
@@ -40,9 +43,15 @@ $(document).ready(function () {
             email: {
                 email: "The email should be in the format: abc@domain.tld"
             },
-            weight: {
+            password: {
                 required: "People with age over 50 have to enter their weight",
                 number: "Please enter your weight as a numerical value"
+            },
+            confirm:{
+                equalTo: "Password does not match"
+            },
+            submitHandler: function(form){
+                form.submit();
             }
         }
     });
