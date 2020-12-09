@@ -16,6 +16,8 @@ if(is_array($row)) {
   $_SESSION["first_name"] = $row['first_name'];
   $_SESSION["last_name"] = $row['last_name'];
   $_SESSION["pwd"] = $row['password'];
+  $_SESSION["date_bought"] = $row['clanarina_kupnja'];
+  $_SESSION["date_expire"] = $row['clanarina_kraj'];
   } else {
     $message = "Invalid Username or Password!";
     }

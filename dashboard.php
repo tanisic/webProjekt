@@ -1,8 +1,10 @@
 <?php
 session_start();
+require "connect.php";
 if (!isset($_SESSION['email'])){
     header("Location: index.php");
 }
+
 ?>
 <html lang="en">
 <head>
@@ -48,7 +50,7 @@ if (!isset($_SESSION['email'])){
         <div class="navbar-nav">
           <a class="nav-item nav-link active pocetna-button" href="index.php">Početna</a>
           <a class="nav-item nav-link active pocetna-button" href="change_password.html">Promjena lozinke</a>
-          <a class="nav-item nav-link active pocetna-button" href="reservation.php">Nadoplata usluge</a>
+          <a class="nav-item nav-link active pocetna-button" href="reservation.php">Kupnja članarine</a>
           <a class="nav-item nav-link onama-button" href="logout.php">Logout</a>
         </div>
       </div>
@@ -62,7 +64,14 @@ if (!isset($_SESSION['email'])){
                         <h3>Izmjena osobnih podataka</h3>
                     </div>
                     <div class="card-body">
-
+                        <?php
+                            if(($_SESSION['date_bought']==NULL) && ($_SESSION['date_expire']==NULL)){
+                                echo '<p>Niste još kupili članarinu.</p>';
+                            }
+                            else{
+                                echo '<p>Članarinu ste kupili datuma '.$_SESSION['date_bought'].', a traje do '.$_SESSION['date_expire'].'</p>';
+                            }
+                        ?>
                         <form class="form-horizontal" name="registration" id="reg-form" method="post" action="change_info.php">
 
                             <div class="form-group">
