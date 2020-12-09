@@ -79,22 +79,39 @@ session_start();
       </div>
     </div>
   </div>
+  <hr>
   <div class="container-fluid div-galerija" id="o-nama">
       <h1>O nama</h1>
-      <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna erat, eleifend at varius ac, lacinia
-        eget ligula. Vestibulum suscipit dapibus convallis. In hac habitasse platea dictumst. Nulla consequat purus quis
-        metus fermentum tincidunt. Ut efficitur tortor at ullamcorper euismod. In vitae dui dictum, posuere ligula sit
-        amet, lacinia felis. Donec quis suscipit erat. Sed nulla lorem, iaculis sed libero nec, accumsan eleifend odio.
-        Aliquam erat volutpat. Cras elit mauris, efficitur mollis auctor ac, viverra non massa. Nullam porttitor justo
-        hendrerit ullamcorper euismod. Praesent sagittis molestie rutrum. Etiam in lobortis leo. Proin auctor varius
-        libero a pulvinar. Aliquam vel pharetra lacus, a blandit tortor.
-
-        In a vestibulum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-        egestas. Cras et lorem dignissim diam faucibus posuere. Mauris a luctus nunc. Aliquam sit amet consequat lorem.
-        Nulla id velit sit amet arcu auctor ultricies ut vitae nulla. Nullam accumsan efficitur sodales. Vivamus nisi
-        neque, pretium vitae quam a, venenatis mollis quam. Donec a lorem bibendum, vestibulum ex id, accumsan tortor.
-        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam egestas libero id
-        erat vestibulum posuere.</p>
+      <br>
+      <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <img src="images/gymWoman.png" />
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-8 grey-content">
+        <p>
+          Baš fit teretana je namijenjena svima koji brinu o zdravom načinu života bez obzira jesu li rekreativci, početnici ili sportaši.
+        </p>
+        <hr>
+        <p>
+          Otvoreni smo od 05:00h do 23:30h od PON do NED.
+        </p>
+        <hr>
+        <p>
+          Pristupačne cijene kako bi svi imali priliku trenirati u odličnim uvjetima.
+        </p>
+        <hr>
+        <p>
+          Popust za studente
+        </p>
+        <hr>
+        <p>
+          Besplatna WiFi mreža
+        </p>
+        <hr>
+      </div>
+    </div>
     </div>
 
     <div class="container-fluid" id="galerija">
@@ -149,10 +166,6 @@ session_start();
         </div>
     
       </div>
-
-
-
-
 </div>
 </div>
     
