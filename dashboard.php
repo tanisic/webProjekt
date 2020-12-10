@@ -48,6 +48,9 @@ if (!isset($_SESSION['email'])){
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+        <?php
+            echo '<li><a class="nav-link user-logged nav-item" href="dashboard.php">Dobrodošao, '.$_SESSION["first_name"].'</a></li>';
+        ?>
           <a class="nav-item nav-link active pocetna-button" href="index.php">Početna</a>
           <a class="nav-item nav-link active pocetna-button" href="change_password.html">Promjena lozinke</a>
           <a class="nav-item nav-link active pocetna-button" href="reservation.php">Kupnja članarine</a>
@@ -72,6 +75,8 @@ if (!isset($_SESSION['email'])){
                                 echo '<p>Članarinu ste kupili datuma '.$_SESSION['date_bought'].', a traje do '.$_SESSION['date_expire'].'</p>';
                             }
                         ?>
+                        <br>
+                        <p>Ovdje je moguće promjeniti osobne podatke!</p>
                         <form class="form-horizontal" name="registration" id="reg-form" method="post" action="change_info.php">
 
                             <div class="form-group">

@@ -1,7 +1,6 @@
 <?php
 session_start();
 ?>
-<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -46,25 +45,28 @@ session_start();
         <i class="fas fa-bars hamburger"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <ul class="navbar-nav">
           <?php
             if(isset($_SESSION["email"])){
-              echo '<a class="nav-link user-logged nav-item" href="dashboard.php">Dobrodošao, '.$_SESSION["first_name"].'</a>';
+              echo '<li><a class="nav-link user-logged nav-item" href="dashboard.php">Dobrodošao, '.$_SESSION["first_name"].'</a></li>';
             }
           ?>
-          <a class="nav-item nav-link active pocetna-button" href="#">Početna</a>
-          <a class="nav-item nav-link onama-button" href="#o-nama">O nama</a>
-          <a class="nav-item nav-link galerija-button" href="#galerija">Foto galerija</a>
+          <li><a class="nav-item nav-link active pocetna-button" href="#">Početna</a></li>
+          <li><a class="nav-item nav-link onama-button" href="#o-nama">O nama</a></li>
+          <li><a class="nav-item nav-link galerija-button" href="#galerija">Foto galerija</a></li>
+          <ul class="nav navbar-nav navbar-right">
           <?php
             if (isset($_SESSION["email"])){
-              echo '<a class="nav-item nav-link" href="dashboard.php">Postavke računa</a>';
-              echo '<a class="nav-item nav-link" href="logout.php">Logout</a>';
+              echo '<li><a class="nav-item nav-link" href="dashboard.php">Postavke računa</a></li>';
+              echo '<li><a class="nav-item nav-link" href="logout.php">Logout</a></li>';
             }
             else{
-              echo '<a class="nav-item nav-link" href="login.php">Login</a>';
-              echo '<a class="nav-item nav-link" href="register.php">Registracija</a>';
+              echo '<li><a class="nav-item nav-link navbar-right" href="login.php">Login</a></li>';
+              echo '<li><a class="nav-item nav-link navbar-right" href="register.php">Registracija</a></li>';
             }
           ?>
+          </ul>
+          
         </div>
       </div>
     </nav>

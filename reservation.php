@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (!isset($_SESSION['email'])){
+    header("Location: index.php");
+}
 ?>
 <html lang="en">
 
@@ -49,6 +52,9 @@ session_start();
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+        <?php
+            echo '<li><a class="nav-link user-logged nav-item" href="dashboard.php">Dobrodošao, '.$_SESSION["first_name"].'</a></li>';
+        ?>
           <a class="nav-item nav-link active pocetna-button" href="index.php">Početna</a>
           <a class="nav-item nav-link active pocetna-button" href="change_password.html">Promjena lozinke</a>
           <a class="nav-item nav-link active pocetna-button" href="reservation.php">Kupnja članarine</a>
@@ -66,21 +72,36 @@ session_start();
                     </div>
                     <div class="card-body">
 
-                        <form class="form-horizontal" name="registration" id="reg-form" method="post" action="change_password.php">
+                        <form class="form-horizontal" name="reservation" id="reservation" method="post" action="buy_reservation.php">
                             <p>Članarinu je moguće prednaručiti preko weba, a platiti pri dolasku u teretanu.</p>
                             <div class="form-group">
                                 <label for="confirm" class="cols-sm-2 control-label">Kupnja članarine</label>
                                 <div class="cols-sm-4">
                                     <div class="input-group">
                                         <span class="input-group-addon"></span>
-                                        <input type="password" class="form-control" name="confirm" id="confirm"
-                                            placeholder="Ponovno unesite novu lozinku..." required/>
+                                        <select name="clanarina" id="clanrina">
+                                        <?php
+                                            $ponuda = array(
+                                                "1mjesec" => array("dana" => 30, "cijena" => "150Kn"),
+                                                "3mjeseca" => array("dana" => 90, "cijena" => "370Kn"),
+                                                "6mjeseci" => array("dana" => 180, "cijena" => "800Kn"),
+                                                "godina" => array("dana" => 365, "cijena" => "1200Kn"),
+                                            );
+                                            foreach($ponuda as $item){
+                                                $dana = $item["dana"];
+                                                $cijena = $item["cijena"];
+                                                echo '<option value="'.$dana.'">'.$dana.' dana za '.$cijena.'</option>';
+                                            } 
+                                            
+                                            
+                                        ?>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group ">
                                 <button type="submit"
-                                    class="btn btn-primary btn-lg btn-block login-button">Spremi promjene</button>
+                                    class="btn btn-primary btn-lg btn-block login-button">Naruči</button>
                             </div>
                             
                         </form>
