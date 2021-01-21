@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("form[name='registration'").validate({
+    $("#reg-form").validate({
         rules: {
             first_name: {
                 required: true,
@@ -12,7 +12,7 @@ $(document).ready(function () {
             telephone: {
                 required: true,
                 number: true,
-                minlength: 9
+                min: 9
             },
             email: {
                 required: true,
@@ -24,35 +24,36 @@ $(document).ready(function () {
 
             },
             confirm: {
+                required: true,
                 equalTo: "#password",
                 minlength:8
             }
         },
         messages: {
             first_name: {
-                required: "Unesite ime",
-                minlength: "Ime mora sadržavati barem 3 slova."
+                required: "Obavezan unos imena",
+                minlength: "Ime mora biti barem 3 znaka"
             },
             last_name: {
-                required: "Unesite prezime",
-                minlength: "Prezime mora sadržavati barem 3 slova."
+                required: "Obavezan unos prezimena",
+                minlength: "Prezime mora biti barem 3 znaka"
             },
             telephone: {
-                required: "Unesite valjani broj telefona",
-                number: "Unesite numeričku vrijednost",
-                minlength: "Broj mora sadržavati barem 9 znamenaka"
+                required: "Potrebno je unesti broj telefona",
+                number: "Broj mora biti numerička vrijednost",
+                min: "Broj mora imati minimalno 9 znamenki"
             },
             email: {
-                required: "Unesite email adresu",
-                email: "Email mora biti formata: primjer@primjer.hr"
+                required: "Obavezan unos e-maila",
+                email: "E-mail mora biti formata abc@abc.hr"
             },
             password: {
-                required: "Ovo polje je obavezno za unos",
+                required: "Lozinka je obavezna",
                 minlength: "Lozinka mora sadržavati barem 8 znakova"
             },
             confirm:{
-                required: "Ponovno unesite lozinku",
-                equalTo: "Lozinke se ne podudaraju",
+                required: "Lozinka je obavezna",
+                equalTo: "Lozinka se ne podudara!",
                 minlength: "Lozinka mora sadržavati barem 8 znakova"
             },
             submitHandler: function(form){

@@ -170,7 +170,9 @@ session_start();
       </div>
 </div>
 </div>
-    
+  <br>
+  <br>
+  <br>
     <script src="index_script.js"></script>
 </body>
 
