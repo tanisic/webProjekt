@@ -68,51 +68,25 @@ if (!isset($_SESSION['email'])){
                         <h3>Izmjena osobnih podataka</h3>
                     </div>
                     <div class="card-body">
-                        <?php
-                            if(($_SESSION['date_bought']==NULL) && ($_SESSION['date_expire']==NULL)){
-                                echo '<p>Niste još kupili članarinu.</p>';
-                            }
-                            else{
-                                echo '<p>Članarinu ste kupili datuma '.$_SESSION['date_bought'].', a traje do '.$_SESSION['date_expire'].'</p>';
-                            }
-                        ?>
-                        <br>
-                        <p>Ovdje je moguće promjeniti osobne podatke!</p>
-                        <form class="form-horizontal" name="registration" id="reg-form" method="post" action="change_info.php">
+                        
+                        <p>Ovdje je moguće obrisati korisnički račun!</p>
+                        <form class="form-horizontal" name="delete" id="del-form" method="post" action="delete_logic.php">
 
+                            
+                            
                             <div class="form-group">
-                                <label for="email" class="cols-sm-2 control-label">E-mail</label>
-                                <div class="cols-sm-4">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"></span>
-                                        <input type="text" class="form-control" name="email" id="email"
-                                            placeholder="E-mail adresa..." required/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="cols-sm-2 control-label">Telefon</label>
-                                <div class="cols-sm-4">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"></span>
-                                        <input type="text" class="form-control" name="telephone" id="telephone"
-                                            placeholder="Telefon..." required />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="cols-sm-2 control-label">Potvrda promjene lozinkom</label>
+                                <label for="password" class="cols-sm-2 control-label">Potvrda brisanja lozinkom</label>
                                 <div class="cols-sm-4">
                                     <div class="input-group">
                                         <span class="input-group-addon"></span>
                                         <input type="password" class="form-control" name="password" id="password"
-                                            placeholder="Potvrda promjene lozinkom..." required/>
+                                            placeholder="Potvrda brisanja lozinkom..." required/>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group ">
                                 <button type="submit"
-                                    class="btn btn-primary btn-lg btn-block login-button">Spremi promjene</button>
+                                    class="btn btn-primary btn-lg btn-block login-button">OBRIŠI</button>
                             </div>
                             
                         </form>

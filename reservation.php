@@ -58,6 +58,7 @@ if (!isset($_SESSION['email'])){
           <a class="nav-item nav-link active pocetna-button" href="index.php">Početna</a>
           <a class="nav-item nav-link active pocetna-button" href="change_password.html">Promjena lozinke</a>
           <a class="nav-item nav-link active pocetna-button" href="reservation.php">Kupnja članarine</a>
+          <a class="nav-item nav-link active pocetna-button" href="delete.php">Obriši račun</a>
           <a class="nav-item nav-link onama-button" href="logout.php">Logout</a>
         </div>
       </div>
