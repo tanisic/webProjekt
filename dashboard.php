@@ -37,6 +37,7 @@ if (!isset($_SESSION['email'])){
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
   <link rel="stylesheet" href="dashboard.css">
+  <script type="text/javascript" src="dashboard.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -78,24 +79,24 @@ if (!isset($_SESSION['email'])){
                         ?>
                         <br>
                         <p>Ovdje je moguće promjeniti osobne podatke!</p>
-                        <form class="form-horizontal" name="registration" id="reg-form" method="post" action="change_info.php">
+                        <form class="form-horizontal" name="dash-change" id="dash-form" method="post" action="change_info.php">
 
                             <div class="form-group">
                                 <label for="email" class="cols-sm-2 control-label">E-mail</label>
                                 <div class="cols-sm-4">
                                     <div class="input-group">
                                         <span class="input-group-addon"></span>
-                                        <input type="text" class="form-control" name="email" id="email"
+                                        <input type="email" class="form-control" name="email" id="email"
                                             placeholder="E-mail adresa..." required/>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="email" class="cols-sm-2 control-label">Telefon</label>
+                                <label for="telephone" class="cols-sm-2 control-label">Telefon</label>
                                 <div class="cols-sm-4">
                                     <div class="input-group">
                                         <span class="input-group-addon"></span>
-                                        <input type="text" class="form-control" name="telephone" id="telephone"
+                                        <input type="tel" class="form-control" name="telephone" id="telephone"
                                             placeholder="Telefon..." required />
                                     </div>
                                 </div>
@@ -105,8 +106,8 @@ if (!isset($_SESSION['email'])){
                                 <div class="cols-sm-4">
                                     <div class="input-group">
                                         <span class="input-group-addon"></span>
-                                        <input type="password" class="form-control" name="password" id="password"
-                                            placeholder="Potvrda promjene lozinkom..." required/>
+                                        <input type="password" class="form-control" name="confirm" id="confirm"
+                                            placeholder="Potvrda promjene lozinkom..." minlength="8" required/>
                                     </div>
                                 </div>
                             </div>

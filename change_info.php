@@ -4,7 +4,7 @@ require "connect.php";
 
 $email = $_POST['email'];
 $telephone = $_POST['email'];
-$password = $_POST['password'];
+$password = $_POST['confirm'];
 $password = md5($password);
 $user_pwd = $_SESSION['pwd'];
 $id = $_SESSION['id'];

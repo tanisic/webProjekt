@@ -33,7 +33,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <link rel="stylesheet" href="register.css">
     <link rel="icon" href="images/dumbbell.png">
-    <script src="register.js"></script>
+    
     <title>Registracija korisnika!</title>
 </head>
 
@@ -74,7 +74,7 @@
                                 <div class="cols-sm-4">
                                     <div class="input-group">
                                         <span class="input-group-addon"></span>
-                                        <input type="text" class="form-control" name="email" id="email"
+                                        <input type="email" class="form-control" name="email" id="email"
                                             placeholder="E-mail adresa..." required/>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@
                                 <div class="cols-sm-4">
                                     <div class="input-group">
                                         <span class="input-group-addon"></span>
-                                        <input type="text" class="form-control" name="telephone" id="telephone"
+                                        <input type="tel" class="form-control" name="telephone" id="telephone"
                                             placeholder="Telefon..." required />
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@
                                     <div class="input-group">
                                         <span class="input-group-addon"></span>
                                         <input type="password" class="form-control" name="password" id="password"
-                                            placeholder="Lozinka..." required/>
+                                            placeholder="Lozinka..." minlength="8" required/>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +105,7 @@
                                     <div class="input-group">
                                         <span class="input-group-addon"></span>
                                         <input type="password" class="form-control" name="confirm" id="confirm"
-                                            placeholder="Ponovno unesite lozinku..." required/>
+                                            placeholder="Ponovno unesite lozinku..." minlength="8" required/>
                                     </div>
                                 </div>
                             </div>

@@ -47,14 +47,14 @@ header("Location:index.php");
         <a href="register.html" class="float-right btn btn-outline-primary ">Registriraj se!</a>
         <a href="index.php" class="float-right btn btn-outline-primary ">Početna</a>
         <h4 class="card-title mb-4 mt-1">Logiraj se!</h4>
-        <form id="form-login" action="" method="post" onsubmit="return validate();">
+        <form id="form-login" action="" method="post">
           <div class="form-group">
             <label>E-mail</label>
-            <input class="form-control" name="email" id="email" placeholder="Email..." type="email">
+            <input class="form-control" name="email" id="email" placeholder="Email..." type="email" required>
           </div> <!-- form-group// -->
           <div class="form-group">
             <label>Lozinka</label>
-            <input class="form-control" name="password" id="password" placeholder="Lozinka..." type="password">
+            <input class="form-control" name="password" id="password" placeholder="Lozinka..." minlength="8" type="password" required>
           </div> <!-- form-group// -->
           <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block"> Login </button>
@@ -65,7 +65,7 @@ header("Location:index.php");
   </div>
   <div class="col-4"></div>
   </div>
-  <script type="text/javascript" src="login.js">
+  
 
   </script>
 </body>
